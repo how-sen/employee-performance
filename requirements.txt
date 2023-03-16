@@ -3,4 +3,5 @@ flask_restful==0.3.9
 pandas==1.5.3
 datetime==5.1
 Flask-SQLAlchemy==3.0.3
-gunicorn
+flask_cors
+db

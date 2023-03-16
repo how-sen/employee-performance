@@ -24,7 +24,7 @@ def receive_data():
     data = request.get_json()  # Get the data sent as JSON
     calculate_mean_working_time(data)
     # Build URL to retrieve relevant data
-    url = f"https://employee-performancee.herokuapp.com/data?employee_name={data['employeeName']}&task={data['task']}&restaurant={data['restaurantName']}"
+    url = f"http://127.0.0.1:5000/data?employee_name={data['employeeName']}&task={data['task']}&restaurant={data['restaurantName']}"
     # Send response to client
     return jsonify({'success': True, 'data_url': url})
 

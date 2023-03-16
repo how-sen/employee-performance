@@ -49,10 +49,10 @@ const Hours = () => {
     };
 
     const saveData = async (data) => {
-        axios.post("https://employee-performancee.herokuapp.com/data", data).then(function (response) {
+        axios.post("http://127.0.0.1:5000/data", data).then(function (response) {
             const url = response.data.data_url;
             dispatch(setUrl(url));
-            window.location.href = "https://employee-performancee.herokuapp.com/performance";
+            window.location.href = "http://localhost:3000/performance";
         }).catch(function(error){
             if (error.response) {
                 console.log(error.response.data);
