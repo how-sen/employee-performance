@@ -1,6 +1,6 @@
 flask==2.2.3
 flask_restful==0.3.9
-panda==0.3.1
+pandas==1.5.3
 datetime==5.1
 Flask-SQLAlchemy==3.0.3
 gunicorn
