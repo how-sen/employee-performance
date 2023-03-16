@@ -1,5 +1,5 @@
 # Employee Performance Monitoring App
-This application collects data from four different restaurants on the same date to track and monitor employee efficiency. You can access the data collection form at https://employee-performancee.herokuapp.com/hours.
+This application collects data from four different restaurants on the same date to track and monitor employee efficiency. You can access the data collection form at http://localhost:3000/hours.
 
 Once you enter the necessary information, the backend will calculate and store the average time each employee spends on a specific task based on the data you provide. The backend will then send back the data related to the selected user, and the frontend will display two charts:
 
@@ -11,4 +11,24 @@ While there is room for improvement, such as adding error handling to the data c
 
 I used several helper packages to expedite the implementation process, which are not my preferred choices in a real-world scenario. 
 
-The time required to set up the project's basics and deploy it was not factored into the 5-hour time limit.
+The time required to set up the project's basics was not factored into the 5-hour time limit.
+
+Steps to clone the project
+
+in root dirctory:
+
+```pip install -r requirements.txt```
+
+```flask run```
+
+(You want to make sure that you are running the backend on http://127.0.0.1:5000)
+
+switch to another terminal window
+
+```cd frontend/```
+
+```npm i```
+
+```npm start```
+
+Go on http://localhost:3000/hours and you can start to interact with the application
